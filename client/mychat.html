@@ -8,24 +8,6 @@
 			<h3>Users</h3>
 			{{> usersList}}
 			<h3>Messages</h3>
-			{{> messagesList }}
+			{{> messagesList}}
 		{{/if}}
 </body>
-
-<template name="messagesList">
-	voici les messages
-	{{#each messages}}
-		<div>
-			<strong>@{{recepient}}</strong>:{{content}}, {{sender}}
-		</div>
-	{{/each}}
-</template>
-
-<template name="usersList">
-	voici les utilisateur
-	{{#each users}}
-		<div>
-			<strong>Pseudo : @</strong>{{username}}
-		</div>
-	{{/each}}
-</template>
